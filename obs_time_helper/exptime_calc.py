@@ -1,11 +1,8 @@
 __author__ = 'tdwilkinson'
 
-import numpy as np
-
 
 class by_mag_comparison():
     def __init__(self, ref_magnitude, ref_sn, ref_exptime, target_sn, array_magnitudes):
-
         exptime = (target_sn * ref_exptime) / ref_sn
         print 'recommended exp time:', exptime
 
@@ -16,5 +13,3 @@ class by_mag_comparison():
             new_exptime = ratio_flux * exptime
 
             print mag, new_exptime
-
-
